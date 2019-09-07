@@ -1,0 +1,20 @@
+@import "scss/variables";
+
+:host {
+  background-color: $color-gray-light-1;
+  border-radius: 100rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.8rem 0.8rem;
+  text-transform: uppercase;
+}
+
+:host.badge-status--over {
+  background-color: $color-error;
+  color: $color-white;
+}
+
+:host.badge-status--current {
+  background-color: $color-primary;
+  color: $color-white;
+}

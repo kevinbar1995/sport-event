@@ -1,0 +1,40 @@
+<ul class="_content">
+  <li routerLinkActive="isActive" class="_item">
+    <a
+      [routerLink]="['/home']"
+      routerLinkActive="router-link-active"
+      class="_link"
+    >
+      <fa-icon class="_icon" [icon]="faClipboard"></fa-icon>
+      <span class="_link-name">News</span>
+    </a>
+  </li>
+
+  <li routerLinkActive="isActive" class="_item">
+    <a [routerLink]="['/event']" class="_link">
+      <fa-icon class="_icon" [icon]="faCalendarAlt"></fa-icon>
+      <span class="_link-name">Events</span>
+    </a>
+  </li>
+
+  <li routerLinkActive="isActive" class="_item">
+    <a [routerLink]="['/auth/login']" class="_link">
+      <fa-icon class="_icon" [icon]="faFutbol"></fa-icon>
+      <span class="_link-name">Babyfoot</span>
+    </a>
+  </li>
+
+  <li routerLinkActive="isActive" class="_item">
+    <a href="#" class="_link">
+      <fa-icon class="_icon" [icon]="faBell"></fa-icon>
+      <span class="_link-name">Notifs</span>
+    </a>
+  </li>
+
+  <li routerLinkActive="isActive" class="_item">
+    <a href="#" class="_link">
+      <fa-icon class="_icon" [icon]="faUser"></fa-icon>
+      <span class="_link-name">Profile</span>
+    </a>
+  </li>
+</ul>

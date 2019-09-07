@@ -1,0 +1,30 @@
+<h1 class="_title heading-1 u-font-weight-reg">Register</h1>
+
+<div class="form-group">
+  <input class="form__input-text" type="text" placeholder="Name" />
+</div>
+
+<div class="form-group">
+  <input class="form__input-text" type="text" placeholder="Email" />
+</div>
+
+<div class="form-group">
+  <input class="form__input-text" type="password" placeholder="Password" />
+</div>
+
+<div class="form-group">
+  <app-btn color="primary" sizing="full-width">
+    Create account
+  </app-btn>
+</div>
+
+<div class="form-group">
+  <app-btn
+    color="neutral"
+    sizing="full-width"
+    [routerLink]="['/auth/login']"
+    routerLinkActive="router-link-active"
+  >
+    Sign in
+  </app-btn>
+</div>

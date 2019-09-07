@@ -1,0 +1,39 @@
+@import "scss/variables.scss";
+
+:host {
+  border-radius: $border-radius;
+  color: $color-white;
+  display: inline-block;
+  font-weight: normal;
+  padding: 1.4rem 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+// ._content:not(:last-child) {
+//   margin-right: 0.8rem;
+// }
+
+:host.btn-sizing--full-width {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+:host.btn-sizing--fit-content {
+  width: fit-content;
+}
+
+:host.btn-color--primary {
+  background-color: $color-primary;
+}
+
+:host.btn-color--neutral {
+  background-color: $color-gray-light-1;
+  color: $color-black;
+}

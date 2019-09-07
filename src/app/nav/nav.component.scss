@@ -1,0 +1,44 @@
+@import "scss/variables.scss";
+
+:host {
+  background-color: $color-white;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+._content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: $box-shadow-light;
+}
+
+._item {
+  list-style-type: none;
+  color: $color-gray-dark-2;
+  padding: 1rem 1.5rem;
+}
+
+._link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: currentColor;
+  position: relative;
+}
+
+._icon {
+  font-size: 2rem;
+}
+
+._link-name {
+  font-size: 1.2rem;
+}
+
+.isActive {
+  color: $color-primary;
+}

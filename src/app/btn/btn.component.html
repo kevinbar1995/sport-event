@@ -1,0 +1,9 @@
+<span class="_content">
+  <ng-content *ngIf="!isSubmitting; else svgLoader"></ng-content>
+
+  <ng-template #svgLoader>
+    <fa-icon class="_svg-loader" [icon]="faSpinner" [spin]="true"></fa-icon>
+  </ng-template>
+</span>
+
+<ng-content select="[icon]"></ng-content>

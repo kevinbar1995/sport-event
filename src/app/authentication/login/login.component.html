@@ -1,0 +1,30 @@
+<h1 class="_title heading-1 u-font-weight-reg">Sign in</h1>
+
+<div class="form-group">
+  <input class="form__input-text" type="text" placeholder="Email" />
+</div>
+
+<div class="form-group">
+  <input class="form__input-text" type="password" placeholder="Password" />
+</div>
+
+<div class="form-group">
+  <a class="_link" [routerLink]="['/auth/forgotPassword']">Forgot Password</a>
+</div>
+
+<div class="form-group">
+  <app-btn color="primary" sizing="full-width" (click)="onSignIn()">
+    Connexion
+  </app-btn>
+</div>
+
+<div class="form-group">
+  <app-btn
+    color="neutral"
+    sizing="full-width"
+    [routerLink]="['/auth/register']"
+    routerLinkActive="router-link-active"
+  >
+    Register
+  </app-btn>
+</div>

@@ -1,0 +1,32 @@
+@import "scss/variables";
+
+:host {
+  align-items: center;
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+._search {
+  align-items: center;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  position: relative;
+  width: 44px;
+  z-index: 100;
+
+  &:after {
+    background-color: $color-gray-light-1;
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: -1;
+  }
+}

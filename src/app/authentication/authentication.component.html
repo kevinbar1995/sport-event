@@ -1,0 +1,7 @@
+<ng-container *ngIf="userSignIn; else userRegister">
+  <app-login></app-login>
+</ng-container>
+
+<ng-template #userRegister>
+  <app-register></app-register>
+</ng-template>
